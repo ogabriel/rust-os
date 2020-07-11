@@ -9,7 +9,7 @@ use core::panic::PanicInfo;
 /// entrypoint
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    vga_buffer::print_something();
+    println!("Hello World {}", "!");
 
     loop {}
 }
